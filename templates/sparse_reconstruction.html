@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+    </style>
+
+
+
+
+    <body>
+       <p>Hello</p>
+       <p>{{output}}</p>
+       <form action="/download_file_json">
+        <button type="submit">Download file json</button>
+
+       </form>
+
+       <form action="/download_file_json/return">
+        <button type="submit">Return</button>
+       </form>
+
+    <table style="width: 20%">
+        <tr>
+            <th>Number images</th>
+            <td>{{num_img}}</td>
+        </tr>
+
+        <tr>
+            <th>Number inlier pairs</th>
+            <td>{{num_inlier_pairs}}</td>
+        </tr>
+
+        <tr>
+            <th>Number inlier matches</th>
+            <td>{{num_inlier_matches}}</td>
+        </tr>
+
+        <tr>
+            <th>Registed images</th>
+            <td>{{num_registered}}</td>
+        </tr>
+
+        <tr>
+            <th>Sparse points</th>
+            <td>{{num_sparse_points}}</td>
+        </tr>
+
+        <tr>
+            <th>Observations</th>
+            <td>{{num_obersvation}}</td>
+        </tr>
+
+        <tr>
+            <th>Mean projection error</th>
+            <td>{{reprojection_error}}</td>
+        </tr>
+        
+    
+    
+    </table>
+
+
+    </body>
+</html>

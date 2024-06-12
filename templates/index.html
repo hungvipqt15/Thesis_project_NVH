@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FastAPI File Uploads</title>
+        <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
+        <link href="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+        <form action="http://localhost:8000/uploadfile"
+        class="dropzone"
+        id="my-awesome-dropzone">
+        </form>
+
+
+
+        <form action="http://localhost:8000/colmap_execute">  
+            <button type="submit">COLMAP execute</button>  
+         </form>
+
+
+
+         <form action="http://localhost:8000/reset_state">
+            <button type="submit">Reset</button>
+         </form>
+    
+
+    <Script>
+        let myDropzone = new Dropzone("#my-awesome-dropzone", {
+            paramName: 'file_uploads'
+        });
+    </Script>
+    </body>
+
+</html>
