@@ -1,1 +1,2 @@
-# Thesis_project_NVH
+open GUI through 
+uvicorn main:app --reload
