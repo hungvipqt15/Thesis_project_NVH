@@ -10,7 +10,7 @@ import trimesh
 import viser
 import viser.transforms as tf
 
-mesh = trimesh.load_mesh(str(Path(__file__).parent / "object/bunny.obj"))
+mesh = trimesh.load_mesh(str(Path(__file__).parent / "object/motorbike.obj"))
 assert isinstance(mesh, trimesh.Trimesh)
 mesh.apply_scale(0.05)
 

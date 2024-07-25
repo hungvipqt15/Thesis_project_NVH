@@ -1,7 +1,17 @@
 ffmpeg -i C:\Users\Admin\Desktop\instant-ngp\data\video\hust\hust_complete.mp4 -c copy -f segment -segment_time 2 -reset_timestamps 1 %03d.mp4
 
-ffmpeg -i C:\Users\Admin\Desktop\instant-ngp\data\video\house\house.mp4 -r 1 frame%04d.png
+ffmpeg -i C:\Users\Admin\Desktop\instant-ngp\data\video\bart\Bart_with_background.mp4 -r 4 frame%04d.png
 
 python run.py --train --n_steps 4000 --second_window --screenshot_transforms D:\Hung\data\desk_chairs\transforms.json
 
 python D:\Hung\instant_ngp\scripts\colmap2nerf.py --images D:\Hung\data\desk_chairs\images --text D:\Hung\data\desk_chairs\colmap_text
+
+python D:\Hung\instant_ngp\scripts\colmap2nerf.py --images D:\Hung\data\desk_chairs\images --run_colmap --aabb_scale 2
+
+python C:\Users\Admin\Desktop\Project\scripts\colmap2nerf.py  --images C:\Users\Admin\Desktop\Project\uploads\images --aabb_scale 16 --out C:\Users\Admin\Desktop\Project\uploads
+
+python C:\Users\Admin\Desktop\Project\scripts\colmap2nerf.py --images C:\Users\Admin\Desktop\Project\uploads\images --text C:\Users\Admin\Desktop\Project\colmap_text
+
+
+
+python C:\Users\Admin\Desktop\Project\scripts\colmap2nerf.py --images C:\Users\Admin\Desktop\Project\remove_background\images --text C:\Users\Admin\Desktop\Project\colmap_text
